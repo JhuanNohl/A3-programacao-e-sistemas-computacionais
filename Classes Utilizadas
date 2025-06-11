@@ -1,0 +1,144 @@
+1: Plano.java
+import jakarta.persistence.*;
+import java.util.List;
+
+@Entity
+public class Plano {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+
+    private String nome;
+    private String descricao;
+    private Double preco;
+    private Integer duracaoMeses;
+
+    @OneToMany(mappedBy = "plano")
+    private List<Aluno> alunos;
+}
+
+2: Aluno.java
+import jakarta.persistence.*;
+import java.util.List;
+
+@Entity
+public class Plano {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+
+    private String nome;
+    private String descricao;
+    private Double preco;
+    private Integer duracaoMeses;
+
+    @OneToMany(mappedBy = "plano")
+    private List<Aluno> alunos;
+}
+
+3: Professor.java
+import jakarta.persistence.*;
+import java.util.List;
+
+@Entity
+public class Professor {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+
+    private String nome;
+    private String cpf;
+    private String especialidade;
+    private String telefone;
+    private String email;
+
+    @OneToMany(mappedBy = "professor")
+    private List<Treino> treinos;
+}
+
+4: Treino.java
+import jakarta.persistence.*;
+import java.time.LocalDate;
+import java.util.List;
+
+@Entity
+public class Treino {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+
+    private String nome;
+    private String objetivo;
+    private LocalDate dataInicio;
+    private LocalDate dataFim;
+
+    @ManyToOne
+    @JoinColumn(name = "id_aluno")
+    private Aluno aluno;
+
+    @ManyToOne
+    @JoinColumn(name = "id_professor")
+    private Professor professor;
+
+    @OneToMany(mappedBy = "treino")
+    private List<TreinoExercicio> exercicios;
+}
+5: Exercicio.java
+import jakarta.persistence.*;
+import java.util.List;
+
+@Entity
+public class Exercicio {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+
+    private String nome;
+    private String descricao;
+    private String grupoMuscular;
+
+    @OneToMany(mappedBy = "exercicio")
+    private List<TreinoExercicio> treinos;
+}
+
+6: TreinoExercicio.java
+import jakarta.persistence.*;
+
+@Entity
+@IdClass(TreinoExercicioId.class)
+public class TreinoExercicio {
+    @Id
+    @ManyToOne
+    @JoinColumn(name = "id_treino")
+    private Treino treino;
+
+    @Id
+    @ManyToOne
+    @JoinColumn(name = "id_exercicio")
+    private Exercicio exercicio;
+
+    private Integer series;
+    private Integer repeticoes;
+    private Double carga;
+}
+
+7: Presenca.java
+import jakarta.persistence.*;
+import java.time.LocalDate;
+import java.time.LocalTime;
+
+@Entity
+public class Presenca {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+
+    private LocalDate data;
+    private LocalTime horaEntrada;
+    private LocalTime horaSaida;
+
+    @ManyToOne
+    @JoinColumn(name = "id_aluno")
+    private Aluno aluno;
+}
+
