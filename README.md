@@ -1,7 +1,9 @@
 🏋️‍♂️ Sistema de Gestão de Academia
+
 Este projeto é um sistema completo para gerenciamento de uma academia de médio porte, desenvolvido com foco acadêmico. Ele inclui a modelagem de banco de dados, entidades em Java usando JPA/Hibernate, e está preparado para integração com Spring Boot.
 
 📚 Funcionalidades
+
 Cadastro de alunos e seus dados pessoais
 
 Registro de planos de assinatura
@@ -17,6 +19,7 @@ Registro de presença de alunos
 Relacionamentos completos entre entidades
 
 📁 Estrutura do Projeto
+
 academia/
 ├── src/
 │   ├── main/
