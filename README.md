@@ -49,6 +49,7 @@ Maven
 ▶️ Como Executar o Projeto
 
 1. Clonar o repositório
+
 bash
 Copiar
 Editar
@@ -56,6 +57,7 @@ git clone https://github.com/JhuanNohl/A3-programacao-e-sistemas-computacionais.
 cd academia-projeto
 
 2. Configurar o Banco de Dados
+
 Crie o banco e execute o script SQL:
 
 sql
@@ -73,6 +75,7 @@ Editar
 mysql -u root -p academia < script_banco_academia.sql
 
 3. Configurar o application.properties
+
 No arquivo src/main/resources/application.properties:
 
 properties
@@ -87,6 +90,7 @@ spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
 
 4. Executar o Projeto
+
 Com o Maven configurado:
 
 bash
@@ -95,6 +99,7 @@ Editar
 ./mvnw spring-boot:run
 
 🗃️ Entidades do Sistema
+
 Entidade	Descrição
 Aluno	Informações do aluno, plano, treinos, presença
 Professor	Especialidade e treinos orientados
@@ -105,6 +110,7 @@ TreinoExercicio	Relaciona treino e exercício (com carga, reps)
 Presenca	Registro de presença diária do aluno
 
 ✅ Próximos Passos (Sugeridos)
+
 Criar camada de serviços (service/) para regras de negócio
 
 Implementar os controllers REST para integração com front-end
@@ -116,6 +122,7 @@ Implementar autenticação com Spring Security
 Criar relatórios com JPQL ou QueryDSL
 
 🧑‍💻 Autor
+
 Projeto acadêmico desenvolvido como parte de uma disciplina de banco de dados e desenvolvimento backend com Java.
 
 Caso deseje contribuições, dúvidas ou melhoria no projeto, fique à vontade para abrir uma issue ou pull request.
