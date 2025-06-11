@@ -1,4 +1,4 @@
-# 🏋️‍♂️ Projeto de Banco de Dados - Academia de Médio Porte
+# 🏋️‍♂️ Projeto de Banco de Dados - Academia
 
 Este projeto tem como objetivo modelar e implementar um banco de dados relacional para uma academia de médio porte. Ele contempla o cadastro e gerenciamento de alunos, professores, treinos, exercícios, planos de assinatura e presenças.
 
