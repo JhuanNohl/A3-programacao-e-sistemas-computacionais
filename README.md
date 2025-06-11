@@ -52,7 +52,7 @@ Maven
 bash
 Copiar
 Editar
-git clone https://github.com/seu-usuario/academia-projeto.git
+git clone https://github.com/JhuanNohl/A3-programacao-e-sistemas-computacionais.git
 cd academia-projeto
 
 2. Configurar o Banco de Dados
