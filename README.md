@@ -21,17 +21,17 @@ Relacionamentos completos entre entidades
 📁 Estrutura do Projeto
 
 academia/
-├── src/
-│   ├── main/
-│   │   ├── java/com/seuprojeto/academia/
-│   │   │   ├── model/           # Entidades JPA
-│   │   │   ├── repository/      # Interfaces JpaRepository
-│   │   │   ├── service/         # Regras de negócio (opcional)
-│   │   │   └── controller/      # REST controllers (futuro)
-│   │   └── resources/
-│   │       └── application.properties
-├── script_banco_academia.sql
-└── README.md
+    src/
+        main/
+            java/com/seuprojeto/academia/
+                model/           # Entidades JPA
+                repository/      # Interfaces JpaRepository
+                service/         # Regras de negócio (opcional)
+                controller/      # REST controllers (futuro)
+            resources/
+                application.properties
+    script_banco_academia.sql
+    README.md
 
 🛠️ Tecnologias Utilizadas
 Java 17+
