@@ -1,0 +1,57 @@
+Requisitos Funcionais
+
+  RF01 – Cadastro de Alunos
+  O sistema deve permitir o cadastro, edição e exclusão de alunos, incluindo dados pessoais, endereço, telefone, e informações de saúde.
+
+  RF02 – Controle de Matrículas e Planos
+  O sistema deve possibilitar o gerenciamento de planos (mensal, trimestral, anual) e o controle do status da matrícula (ativa, suspensa, cancelada).
+
+  RF03 – Registro de Frequência
+  O sistema deve registrar a entrada e saída de alunos utilizando QR code, cartão magnético ou biometria.
+  
+  RF04 – Cadastro de Professores
+  Permitir o cadastro de professores, com suas especialidades, horários disponíveis e turmas associadas.
+  
+  RF05 – Montagem de Fichas de Treino
+  Os instrutores devem poder montar fichas de treino personalizadas para cada aluno, com registros de exercícios, séries e cargas.
+  
+  RF06 – Controle Financeiro
+  O sistema deve registrar pagamentos, permitir emissão de boletos, alertar sobre inadimplência e gerar relatórios financeiros.
+  
+  RF07 – Agendamento de Aulas e Serviços
+  Alunos devem poder agendar aulas coletivas, avaliações físicas e outros serviços oferecidos.
+  
+  RF08 – Envio de Notificações
+  O sistema deve enviar notificações por e-mail, SMS ou aplicativo sobre vencimento de plano, alterações em treinos ou promoções.
+  
+  RF09 – Acompanhamento de Desempenho
+  Permitir geração de relatórios de evolução física, frequência e alcance de metas dos alunos.
+  
+  RF10 – Níveis de Acesso
+  O sistema deve permitir diferentes níveis de acesso (administrador, professor, recepcionista), com permissões específicas.
+
+Requisitos Não Funcionais
+
+  RNF01 – Desempenho
+  O sistema deve garantir tempo de resposta inferior a 2 segundos em 95% das requisições.
+
+  RNF02 – Segurança
+  As senhas devem ser armazenadas com criptografia e todo o tráfego deve ser protegido com HTTPS.
+
+  RNF03 – Disponibilidade
+  O sistema deve estar disponível pelo menos 99,5% do tempo mensal.
+
+  RNF04 – Escalabilidade
+  O sistema deve suportar o aumento de número de usuários e dados sem degradação perceptível de desempenho.
+  
+  RNF05 – Compatibilidade
+  O sistema deve funcionar corretamente nos navegadores modernos e em dispositivos móveis (interface responsiva).
+
+  RNF06 – Usabilidade
+  A interface deve ser intuitiva, com elementos visuais claros e instruções acessíveis a usuários com pouca familiaridade tecnológica.
+
+  RNF07 – Backup e Recuperação
+  Deve haver backups automáticos diários e mecanismos para recuperação de dados em caso de falhas.
+  
+  RNF08 – Conformidade Legal
+  O sistema deve atender à Lei Geral de Proteção de Dados (LGPD), garantindo o consentimento e a proteção dos dados dos usuários.
